@@ -44,7 +44,7 @@ const Homepage = () => {
       </Box>
       <Box
         w={"100%"}
-        backgroundColor="rgba(255, 255, 255, 0.5)" // Red color from Chakra UI color scheme
+        backgroundColor="rgba(255, 255, 255, 0.5)"
         fontFamily="Work Sans"
         p={4}
         borderRadius={"lg"}
@@ -54,13 +54,20 @@ const Homepage = () => {
       >
         <Tabs variant="enclosed" colorScheme="orange">
           <TabList>
-            <Tab width={"50%"} sx={{ fontFamily: "Lemon", fontWeight: "lg" }}>
+            <Tab
+              width={"50%"}
+              sx={{ fontFamily: "Lemon", fontWeight: "lg" }}
+              // bg={"black"}
+              _selected={{ boxShadow: "3px -3px 2px rgba(0, 0, 0, 0.3)" }}
+            >
               Login
             </Tab>
             <Tab
               width={"50%"}
               sx={{ fontFamily: "Lemon", fontWeight: "lg" }}
-              //   _selected={{}}
+              _selected={{
+                boxShadow: "-3px -3px 2px rgba(0, 0, 0, 0.3)",
+              }}
             >
               Sign Up
             </Tab>
